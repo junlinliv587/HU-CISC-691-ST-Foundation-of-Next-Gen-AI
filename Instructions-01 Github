@@ -1,0 +1,55 @@
+🔹 What is GitHub?
+
+Git = version control system (keeps track of changes in your code, allows collaboration).
+
+GitHub = a website/platform that hosts Git repositories online, making it easy to share, collaborate, and back up your projects.
+
+Think of it as Google Drive for code but with powerful collaboration features.
+
+🔹 Key Concepts
+
+Repository (Repo): A project folder on GitHub where your code and history live.
+
+Commit: A snapshot of your changes (like "Save" but with history).
+
+Branch: A separate line of development (good for experimenting without breaking the main project).
+
+Pull Request (PR): A way to propose changes from one branch to another, often reviewed by teammates.
+
+Clone: Download a GitHub repo to your local computer.
+
+Push / Pull: Send your local changes to GitHub (push) or get the latest changes from GitHub (pull).
+
+🔹 Typical Workflow
+
+Create a repo on GitHub (or fork someone else’s).
+
+Clone it to your computer:
+
+git clone https://github.com/username/repo-name.git
+
+
+Make changes in your code locally.
+
+Stage & commit the changes:
+
+git add .
+git commit -m "Add new feature"
+
+
+Push your changes to GitHub:
+
+git push origin main
+
+
+If collaborating, you may need to pull the latest updates:
+
+git pull origin main
+
+🔹 Learning Resources
+
+GitHub has an interactive tutorial: GitHub Skills
+
+Book (free online): Pro Git → https://git-scm.com/book/en/v2
+
+Practice: Create a repo just for experimenting.
