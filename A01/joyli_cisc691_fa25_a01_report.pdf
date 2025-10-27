@@ -1,0 +1,65 @@
+AUTHORSHIP IDENTIFICATION SYSTEM DEVELOPMENT REPORT
+===================================================
+
+Student Name: Junlin Li
+Date: September 2025
+Class: CISC 691 - Foundation of Next-Gen AI
+Assignment: A01 - Authorship Identification System
+
+1. DEVELOPMENT ACTIVITIES
+-------------------------
+
+AI Tools Utilization:
+• Tool: GitHub Copilot
+• Vendor: GitHub (Microsoft)
+• Model: OpenAI Codex
+• Usage: Code generation, prompt engineering, debugging assistance, documentation
+
+Version 2 Enhancements:
+• Extended from 3 to 8 text analysis features
+• Added sentence length statistics and punctuation analysis
+• Implemented vocabulary richness measurement (Honore's R)
+• Created weighted distance calculation for improved accuracy
+• Added confidence scoring for predictions
+
+Output Comparison:
+Version 1 utilized basic features with simple distance calculation, while Version 2
+provides comprehensive author profiling with weighted features and confidence metrics.
+
+2. REFLECTION
+-------------
+
+Positive Aspects:
+The assignment provided valuable hands-on experience with problem decomposition and
+AI-assisted programming. The incremental development approach created clear learning
+progression.
+
+Challenges:
+• Initial environment setup and path configuration
+• Debugging import errors between version files
+• Understanding advanced linguistic features
+• Balancing AI assistance with manual validation
+
+AI Workflow Integration:
+GitHub Copilot served as a collaborative partner, assisting with code generation,
+debugging, and documentation while requiring human oversight for critical decisions.
+
+3. CHALLENGES AND FUTURE WORK
+-----------------------------
+
+Program Improvements:
+• Implement n-gram analysis and machine learning classifiers
+• Add syntactic and semantic features for deeper style analysis
+• Optimize performance with caching and parallel processing
+
+Enhanced Testing:
+• Use Project Gutenberg for large-scale validation
+• Implement comprehensive evaluation metrics
+• Develop interactive visualization tools
+
+Conclusion:
+This assignment demonstrated the effective combination of traditional software
+engineering with modern AI tools, providing valuable experience in iterative
+development and AI collaboration.
+
+==== END OF REPORT ====
