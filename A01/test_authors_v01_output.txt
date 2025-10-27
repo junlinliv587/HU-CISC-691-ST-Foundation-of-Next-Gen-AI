@@ -1,0 +1,16 @@
+Testing clean_word:
+clean_word(Hello!) = {clean_word(Hello!)}
+clean_word('world.') = world
+clean_word('--test--') = test
+
+Testing split_string:
+split_string('This is a test sentence.') = ['This', 'is', 'a', 'test', 'sentence.']
+
+Testing average_word_length:
+average_word_length(['hello', 'world', 'python', 'programming']) = 6.75
+
+Testing different_to_total:
+different_to_total(['hello', 'world', 'hello', 'python', 'world']) = 0.6
+
+Testing exactly_once_to_total:
+exactly_once_to_total(['hello', 'world', 'hello', 'python', 'world']) = 0.2
