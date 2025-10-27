@@ -1,0 +1,92 @@
+=== Testing Individual Functions ===
+Testing clean_word:
+clean_word("'Hello!'") = hello
+clean_word('world.') = world
+clean_word('--test--') = test
+
+Testing split_string:
+split_string('This is a test sentence.') = ['This', 'is', 'a', 'test', 'sentence.']
+
+Testing average_word_length:
+average_word_length(['hello', 'world', 'python', 'programming']) = 6.75
+
+Testing different_to_total:
+different_to_total(['hello', 'world', 'hello', 'python', 'world']) = 0.6
+
+Testing exactly_once_to_total:
+exactly_once_to_total(['hello', 'world', 'hello', 'python', 'world']) = 0.2
+
+Testing new enhanced features:
+sentence_length_features('Hello world! This is a test. Another sentence here.') = (3.0, 4, 0.6666666666666666)
+punctuation_ratio('Hello world! This is a test. Another sentence here.') = 0.058823529411764705
+common_word_ratios(['Hello', 'world!', 'This', 'is', 'a', 'test.', 'Another', 'sentence', 'here.']) = 0.3333333333333333
+vocabulary_richness(['Hello', 'world!', 'This', 'is', 'a', 'test.', 'Another', 'sentence', 'here.']) = 0
+word_length_distribution(['Hello', 'world!', 'This', 'is', 'a', 'test.', 'Another', 'sentence', 'here.']) = (0.2222222222222222, 2.0608041101101566)
+
+=== Testing Complete Enhanced Program ===
+=== Enhanced Author Signatures (8 Features) ===
+
+Author A:
+  Avg Word Length: 4.3529
+  Word Variety Ratio: 0.9412
+  Hapax Legomena Ratio: 0.8824
+  Avg Sentence Length: 8.5000
+  Punctuation Ratio: 0.0217
+  Common Word Ratio: 0.3529
+  Vocabulary Richness: 4533.1414
+  Long Words Ratio: 0.1765
+
+Author B:
+  Avg Word Length: 5.8000
+  Word Variety Ratio: 0.9333
+  Hapax Legomena Ratio: 0.8667
+  Avg Sentence Length: 7.5000
+  Punctuation Ratio: 0.0194
+  Common Word Ratio: 0.2667
+  Vocabulary Richness: 3791.2703
+  Long Words Ratio: 0.4667
+
+Author C:
+  Avg Word Length: 6.4444
+  Word Variety Ratio: 0.9444
+  Hapax Legomena Ratio: 0.8889
+  Avg Sentence Length: 9.0000
+  Punctuation Ratio: 0.0292
+  Common Word Ratio: 0.2778
+  Vocabulary Richness: 4913.6320
+  Long Words Ratio: 0.5556
+
+==================================================
+
+Mystery Text 1: 'A quick brown animal leaps over a sleepy canine.'
+Predicted Author: Author B
+Confidence Distance: 2406.0595
+Mystery Text Signature: ['4.3333', '0.8889', '0.7778', '9.0000', '0.0208', '0.2222', '1757.7797', '0.0000']
+
+Mystery Text 2: 'Coding brings joy and presents difficult puzzles for us to solve.'
+Predicted Author: Author B
+Confidence Distance: 4485.8930
+Mystery Text Signature: ['4.9091', '1.0000', '1.0000', '11.0000', '0.0154', '0.2727', '0.0000', '0.2727']
+
+Mystery Text 3: 'Machine intelligence and data analysis captivate many researchers today.'
+Predicted Author: Author B
+Confidence Distance: 4485.8919
+Mystery Text Signature: ['7.0000', '1.0000', '1.0000', '9.0000', '0.0139', '0.1111', '0.0000', '0.5556']
+=== VERSION COMPARISON: V1 vs V2 ===
+
+--- Version 1 Results (3 features) ---
+Mystery 1: Author A
+Mystery 2: Author A
+Mystery 3: Author C
+
+--- Version 2 Results (8 features with weighting) ---
+Mystery 1: Author B (confidence: 2406.0595)
+Mystery 2: Author B (confidence: 4485.8930)
+Mystery 3: Author B (confidence: 4485.8919)
+
+=== IMPROVEMENT ANALYSIS ===
+Version 2 enhancements:
+- Added 5 new stylistic features
+- Implemented feature weighting based on linguistic importance
+- Provides confidence scores for predictions
+- Better discrimination between similar writing styles
