@@ -1,0 +1,18 @@
+2025-12-03 15:41:52 - AssignmentLogger - INFO - Starting assignment demonstration
+2025-12-03 15:41:52 - AssignmentLogger - INFO - Sending request to LLM
+2025-12-03 15:41:52 - AssignmentLogger - DEBUG - Request JSON: {
+  "timestamp": "2025-12-03T15:41:52.326684",
+  "prompt": "Hello, how are you?",
+  "model": "mock-llama"
+}
+2025-12-03 15:41:53 - AssignmentLogger - INFO - Received response from LLM
+2025-12-03 15:41:53 - AssignmentLogger - DEBUG - Response JSON: {
+  "timestamp": "2025-12-03T15:41:53.328329",
+  "response": "Hello! I'm doing well. How can I assist you today?",
+  "duration": 1.0,
+  "tokens": 12
+}
+2025-12-03 15:41:53 - AssignmentLogger - DEBUG - Debug message - only in file
+2025-12-03 15:41:53 - AssignmentLogger - INFO - Info message - in console and file
+2025-12-03 15:41:53 - AssignmentLogger - WARNING - Warning message - in console and file
+2025-12-03 15:41:53 - AssignmentLogger - ERROR - Error message - in console and file
